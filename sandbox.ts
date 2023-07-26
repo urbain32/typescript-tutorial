@@ -15,4 +15,5 @@ const circle = (diameter) => {
   return diameter * Math.PI;
 };
 
-console.log(circle("hello")); // this will show NAN in the browser because diameter is equal to hello
+// console.log(circle("hello")); // this will show NaN in the browser because diameter is equal to hello
+console.log(circle(6)); // this will work because now the diameter is a number
