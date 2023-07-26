@@ -8,3 +8,11 @@ let age = 20;
 
 let isBlack = false;
 //isBlack = 'yes'
+
+// now let use the same logic in a function t
+
+const circle = (diameter) => {
+  return diameter * Math.PI;
+};
+
+console.log(circle("hello")); // this will show NAN in the browser because diameter is equal to hello
