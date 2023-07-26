@@ -1,10 +1,13 @@
 var character = "urban";
-console.log(character);
-var inputs = document.querySelectorAll("input");
-console.log(inputs);
-inputs.forEach(function (input) {
-    console.log(input);
-});
-// for this typescript to be seen in any browser it needs to be compiled in js
-// using this code in terminal: tsc.cmd or tsc (name of the typescript file)
-// tsc.cmd or tsc (name of the typescript file) -w this will keep watching if there is any change and keep compling
+// in typescrit the type we give a variable can not be change eg:
+// character=20 this show character is assignedas a string
+var age = 20;
+// same ting here if we make age another type it will not work
+// age = '20 ' asssigned to type number
+var isBlack = false;
+//isBlack = 'yes'
+// now let use the same logic in a function t
+var circle = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circle("hello")); // this will show NAN in the browser because diameter is equal to hello
