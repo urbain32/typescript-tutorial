@@ -5,3 +5,6 @@ let character = "urban";
 let age = 20;
 // same ting here if we make age another type it will not work
 // age = '20 ' asssigned to type number
+
+let isBlack = false;
+//isBlack = 'yes'
