@@ -14,3 +14,16 @@ var ninja = {
     color: "red",
     age: 20, //ninja.age will always be a number
 };
+// when we try to override our object we must make use it is the same
+// this will work
+ninja = {
+    name: "urban",
+    color: "black",
+    age: 40,
+};
+// this will not work coz the object structure has change
+// ninja = {
+//   name: "urban",
+//   belt: "black", color was change to belt
+//   age: 40,
+// }
