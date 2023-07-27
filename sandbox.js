@@ -7,3 +7,4 @@ var mixed = ["urban", 1, false];
 //this will accepet string,number, boolean coz they were declared at te beginning
 mixed.push(2, "nane", true);
 console.log(mixed);
+// names = 'hello' we can't also change the variable of the array to a string also
