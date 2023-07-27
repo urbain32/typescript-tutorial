@@ -1,19 +1,13 @@
-let character = "urban";
-// in typescrit the type we give a variable can not be change eg:
-// character=20 this show character is assignedas a string
+// arrays
+// how we declare the array will determine the type we assign to it
 
-let age = 20;
-// same ting here if we make age another type it will not work
-// age = '20 ' asssigned to type number
+let names = ["urban", "chris", "scott"];
 
-let isBlack = false;
-//isBlack = 'yes'
+names.push("urbani"); // this will work because it is a string
+// names.push(2); // this will not work coz it is a number
 
-// now let use the same logic in a function t
+let mixed = ["urban", 1, false];
 
-const circle = (diameter) => {
-  return diameter * Math.PI;
-};
-
-// console.log(circle("hello")); // this will show NaN in the browser because diameter is equal to hello
-console.log(circle(6)); // this will work because now the diameter is a number
+//this will accepet string,number, boolean coz they were declared at te beginning
+mixed.push(2, "nane", true);
+console.log(mixed);
