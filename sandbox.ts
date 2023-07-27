@@ -1,6 +1,6 @@
 // arrays
 // how we declare the array will determine the type we assign to it
-
+// names = 'hello' we can't also change the variable of the array to a string also
 let names = ["urban", "chris", "scott"];
 
 names.push("urbani"); // this will work because it is a string
@@ -12,4 +12,9 @@ let mixed = ["urban", 1, false];
 mixed.push(2, "nane", true);
 console.log(mixed);
 
-// names = 'hello' we can't also change the variable of the array to a string also
+// object
+let ninja = {
+  name: "santos", //ninja.name will always be a string
+  color: "red", //ninja.color will always be a string
+  age: 20, //ninja.age will always be a number
+};
