@@ -15,3 +15,9 @@ let ninjas: string[];
 // ninjas.push("string");
 let numbers: number[] = [];
 numbers.push(2);
+
+// union arrays
+let mixed: (string | number | boolean)[] = [];
+mixed.push("urban");
+mixed.push(12);
+mixed.push(false);
