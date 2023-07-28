@@ -18,3 +18,4 @@ var mixed = [];
 mixed.push("urban");
 mixed.push(12);
 mixed.push(false);
+console.log("first0000", mixed);
