@@ -1,29 +1,20 @@
-// arrays
-// how we declare the array will determine the type we assign to it
-// names = 'hello' we can't also change the variable of the array to a string also
-var names = ["urban", "chris", "scott"];
-names.push("urbani"); // this will work because it is a string
-// names.push(2); // this will not work coz it is a number
-var mixed = ["urban", 1, false];
-//this will accepet string,number, boolean coz they were declared at te beginning
-mixed.push(2, "nane", true);
-console.log(mixed);
-// object
-var ninja = {
-    name: "santos",
-    color: "red",
-    age: 20, //ninja.age will always be a number
-};
-// when we try to override our object we must make use it is the same
-// this will work
-ninja = {
-    name: "urban",
-    color: "black",
-    age: 40,
-};
-// this will not work coz the object structure has change
-// ninja = {
-//   name: "urban",
-//   belt: "black", color was change to belt
-//   age: 40,
-// }
+// explicit types
+var character;
+var age;
+var isLogin;
+// we can't say
+// age = "10"; coz age is number
+// isLogin=23 coz isLogin is boolean
+// for arrays
+var ninjas;
+// we can't say declare the array in any other type which is not a string
+// ninjas = ['urban',10] coz 10 is a number
+// if we want to push on the array we have to declare
+// ninjas.push("string");
+var numbers = [];
+numbers.push(2);
+// union arrays
+var mixed = [];
+mixed.push("urban");
+mixed.push(12);
+mixed.push(false);
