@@ -35,3 +35,8 @@ console.log("first55", uid);
 // this is one way way of declaring an object without saying  its type.
 let ninjaOne: object;
 ninjaOne = { name: "urban", age: 20, isLogin: true };
+
+// object with its types
+let ninjaTwo: { name: string; age: number; isLogin: boolean };
+// ninjaTwo = { name: "urban", age: '20', isLogin: true }; age is a number not a string
+ninjaTwo = { name: "urban", age: 20, isLogin: true };
