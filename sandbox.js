@@ -13,9 +13,14 @@ var ninjas;
 // ninjas.push("string");
 var numbers = [];
 numbers.push(2);
-// union arrays
+// union type on arrays
 var mixed = [];
 mixed.push("urban");
 mixed.push(12);
 mixed.push(false);
 console.log("first0000", mixed);
+// union types on simple variables
+var uid;
+uid = "kiko";
+uid = 4;
+// uid= true this will not work coz uid is not a boolean

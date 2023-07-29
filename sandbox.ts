@@ -16,10 +16,15 @@ let ninjas: string[];
 let numbers: number[] = [];
 numbers.push(2);
 
-// union arrays
+// union type on arrays
 let mixed: (string | number | boolean)[] = [];
 mixed.push("urban");
 mixed.push(12);
 mixed.push(false);
 
 console.log("first0000", mixed);
+// union types on simple variables
+let uid: string | number;
+uid = "kiko";
+uid = 4;
+// uid= true this will not work coz uid is not a boolean
