@@ -26,5 +26,7 @@ console.log("first0000", mixed);
 // union types on simple variables
 let uid: string | number;
 uid = "kiko";
+console.log("first66", uid);
 uid = 4;
+console.log("first55", uid);
 // uid= true this will not work coz uid is not a boolean
