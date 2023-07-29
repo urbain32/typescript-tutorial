@@ -30,3 +30,8 @@ console.log("first66", uid);
 uid = 4;
 console.log("first55", uid);
 // uid= true this will not work coz uid is not a boolean
+
+// object
+// this is one way way of declaring an object without saying  its type.
+let ninjaOne: object;
+ninjaOne = { name: "urban", age: 20, isLogin: true };
