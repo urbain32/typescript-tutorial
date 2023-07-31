@@ -14,3 +14,7 @@ mixed.push("mario");
 mixed.push(true);
 mixed.push(45);
 console.log(mixed);
+// any type on an object
+let ninja: { age: any; name: any };
+ninja = { age: "25", name: true };
+console.log(ninja);
