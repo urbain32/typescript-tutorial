@@ -14,4 +14,4 @@ const sum = (a: number, b: number, c: number | string = 10) => {
   console.log(c);
 };
 // sum(2, "2"); this will not work coz b is a string
-sum(2, 2);
+sum(2, 2, "20"); // now the value of c will be '20' not 10
