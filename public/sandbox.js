@@ -7,6 +7,7 @@ names = () => {
 // if we say names = 'kkioko' this will be an error coz names has been defined as  function
 // best way to declare a function
 const sum = (a, b, c = 10) => {
+    //void helps when a function dont return anything
     // adding a default value
     // c is sting or number coz doesn't have a default value we use ?
     console.log(a + b);

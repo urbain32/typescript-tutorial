@@ -7,7 +7,8 @@ names = () => {
 
 // best way to declare a function
 
-const sum = (a: number, b: number, c: number | string = 10) => {
+const sum = (a: number, b: number, c: number | string = 10): void => {
+  //void helps when a function dont return anything
   // adding a default value
   // c is sting or number coz doesn't have a default value we use ?
   console.log(a + b);
