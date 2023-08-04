@@ -14,3 +14,8 @@ const sum = (a, b, c = 10) => {
 };
 // sum(2, "2"); this will not work coz b is a string
 sum(2, 2, "20"); // now the value of c will be '20' not 10
+const minus = (a, b) => {
+    return a - b;
+};
+// result will become a function  which means result can not be a string or any other type than a function
+let result = minus(5, 7);
