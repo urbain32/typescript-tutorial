@@ -5,12 +5,12 @@ greet = (name: string, age: string) => {
   console.log(`${name} is ${age} years old`);
 };
 greet("Urban", "20");
-
 // example 2 function signature of a number
 let calc: (a: number, b: number, c: string) => number;
-// this will genaret an error coz  if action is equal to add
 calc = (numOne: number, numTwo: number, action: string) => {
   if (action === "add") {
     return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
   }
 };
