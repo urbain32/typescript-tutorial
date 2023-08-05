@@ -1,12 +1,8 @@
 "use strict";
-const logDetails = (uid, item) => {
-    console.log(`${item} has a uid of ${uid}`);
+// example 1
+let greet; // Function Signatures
+greet = (name, age) => {
+    // if we assign any variable to something that is not a string will generate an error on our function
+    console.log(`${name} is ${age} old`);
 };
-const greet = (user) => {
-    console.log(`${user.name} says hello`);
-};
-// now we can re-use our type
-const greetAgain = (user, uid) => {
-    console.log(`${user.name} with uid of ${uid} says hello`);
-};
-greetAgain({ name: "Urban", uid: 12 }, "12");
+greet("urban", "20");
