@@ -9,8 +9,11 @@ greet("Urban", "20");
 let calc: (a: number, b: number, c: string) => number;
 calc = (numOne: number, numTwo: number, action: string) => {
   if (action === "add") {
+    console.log(numOne + numTwo);
     return numOne + numTwo;
   } else {
+    console.log(numOne - numTwo);
     return numOne - numTwo;
   }
 };
+calc(12, 5, "add");

@@ -10,9 +10,12 @@ greet("Urban", "20");
 let calc;
 calc = (numOne, numTwo, action) => {
     if (action === "add") {
+        console.log(numOne + numTwo);
         return numOne + numTwo;
     }
     else {
+        console.log(numOne - numTwo);
         return numOne - numTwo;
     }
 };
+calc(12, 5, "add");
