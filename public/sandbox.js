@@ -19,3 +19,9 @@ calc = (numOne, numTwo, action) => {
     }
 };
 calc(12, 5, "add");
+// example 3 function signature of a object
+let logDetails;
+logDetails = (ninjas) => {
+    console.log(`${ninjas.name} is ${ninjas.age} years old`);
+};
+logDetails({ name: "Tony", age: 20 });
