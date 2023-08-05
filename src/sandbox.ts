@@ -19,7 +19,9 @@ calc = (numOne: number, numTwo: number, action: string) => {
 calc(12, 5, "add");
 // example 3 function signature of a object
 let logDetails: (obj: { name: string; age: number }) => void;
-logDetails = (ninjas: { name: string; age: number }) => {
+// adding a type  aliases
+type person = { name: string; age: number };
+logDetails = (ninjas: person) => {
   console.log(`${ninjas.name} is ${ninjas.age} years old`);
 };
 logDetails({ name: "Tony", age: 20 });
