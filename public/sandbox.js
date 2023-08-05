@@ -6,3 +6,11 @@ greet = (name, age) => {
     console.log(`${name} is ${age} years old`);
 };
 greet("Urban", "20");
+// example 2 function signature of a number
+let calc;
+// this will genaret an error coz  if action is equal to add
+calc = (numOne, numTwo, action) => {
+    if (action === "add") {
+        return numOne + numTwo;
+    }
+};
