@@ -1,9 +1,18 @@
 "use strict";
-// <form class="new-item-form">
-// const form = document.querySelector("form")!; this ts will know it coz form is an html element
-//when we use a class the typpe script  diplay it as an elemnt because it doesnt no the type  tos olve it we use as HTMLFormElement
+// classes
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes $${this.amount} for this ${this.details}`;
+    }
+}
+const invOne = new Invoice("mario", "work on mario website", 250);
+const invTwo = new Invoice("luigi", "work on luigi website", 300);
 const form = document.querySelector(".new-item-form");
-// console.log(form.children);
 // adding the inputs using their id
 const type = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");
@@ -11,7 +20,6 @@ const details = document.querySelector("#details");
 const amount = document.querySelector("#amount");
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent data from auto refreshing after submit
-    // if we want amount to be displayed as a number not a string we use valueAsNumber
+    e.preventDefault();
     console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
