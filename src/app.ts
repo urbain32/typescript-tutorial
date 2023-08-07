@@ -8,3 +8,10 @@ const type = document.querySelector("#type") as HTMLSelectElement;
 const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
+
+// adding an event listiner to display our form values
+
+form.addEventListener("submit", (e: Event) => {
+  e.preventDefault(); // prevent data from auto refreshing after submit
+  console.log(type.value, tofrom.value, details.value, amount.value);
+});
