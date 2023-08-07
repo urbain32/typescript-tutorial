@@ -13,5 +13,6 @@ const amount = document.querySelector("#amount") as HTMLInputElement;
 
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault(); // prevent data from auto refreshing after submit
-  console.log(type.value, tofrom.value, details.value, amount.value);
+  // if we want amount to be displayed as a number not a string we use valueAsNumber
+  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });

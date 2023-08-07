@@ -12,5 +12,6 @@ const amount = document.querySelector("#amount");
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e) => {
     e.preventDefault(); // prevent data from auto refreshing after submit
-    console.log(type.value, tofrom.value, details.value, amount.value);
+    // if we want amount to be displayed as a number not a string we use valueAsNumber
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
