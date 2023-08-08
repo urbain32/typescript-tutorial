@@ -6,6 +6,7 @@ class Invoice {
         this.details = d;
         this.amount = a;
     }
+    // when we use format this.detais we can access details because it is inside the class
     format() {
         return `${this.client} owes $${this.amount} for this ${this.details}`;
     }
@@ -19,8 +20,9 @@ let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
 // cycling our invoice using forEach
+// outside the class we cant because is out side the classof invoice inv.details
 invoices.forEach((inv) => {
-    console.log(inv.client, inv.details, inv.amount, inv.format());
+    console.log(inv.client, inv.amount, inv.format());
 });
 const form = document.querySelector(".new-item-form");
 // adding the inputs using their id
