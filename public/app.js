@@ -17,10 +17,10 @@ console.log(invOne, invTwo);
 let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
-console.log(invoices);
-invOne.client = "urban";
-invTwo.amount = 400;
-console.log(invOne, invTwo);
+// cycling our invoice using forEach
+invoices.forEach((inv) => {
+    console.log(inv.client, inv.details, inv.amount, inv.format());
+});
 const form = document.querySelector(".new-item-form");
 // adding the inputs using their id
 const type = document.querySelector("#type");
