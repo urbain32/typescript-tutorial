@@ -2,7 +2,7 @@
 class Invoice {
   client: string;
   details: string;
-  amount: number;
+  public amount: number;
 
   constructor(c: string, d: string, a: number) {
     this.client = c;
