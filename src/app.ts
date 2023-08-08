@@ -1,8 +1,8 @@
 // classes
 class Invoice {
-  client: string;
+  readonly client: string; //this means we can read it both inside the class and outside but can never be modified
   private details: string;
-  amount: number;
+  public amount: number;
 
   constructor(c: string, d: string, a: number) {
     this.client = c;
