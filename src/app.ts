@@ -1,20 +1,10 @@
 // classes
 class Invoice {
-  // readonly client: string; //this means we can read it both inside the class and outside but can never be modified
-  // private details: string;
-  // public amount: number;
-
   constructor(
-    // this can only be possible if we assign  readonly,private or public else we get an error
     readonly client: string,
     private details: string,
     public amount: number
-  ) {
-    // and inside here we dot need to use this
-    // this.client = c;
-    // this.details = d;
-    // this.amount = a;
-  }
+  ) {}
   // when we use format this.detais we can access details because it is inside the class
   format() {
     return `${this.client} owes $${this.amount} for this ${this.details}`;
@@ -23,7 +13,6 @@ class Invoice {
 const invOne = new Invoice("mario", "work on mario website", 250);
 const invTwo = new Invoice("luigi", "work on luigi website", 300);
 console.log(invOne, invTwo);
-// private
 // putting our invoice in an array
 let invoices: Invoice[] = [];
 invoices.push(invOne);
