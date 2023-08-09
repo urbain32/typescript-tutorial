@@ -5,10 +5,12 @@ class Invoice {
   // public amount: number;
 
   constructor(
-    readonly client: string, //this means we can read it both inside the class and outside but can never be modified
+    // this can only be possible if we assign  readonly,private or public else we get an error
+    readonly client: string,
     private details: string,
     public amount: number
   ) {
+    // and inside here we dot need to use this
     // this.client = c;
     // this.details = d;
     // this.amount = a;
