@@ -1,13 +1,17 @@
 // classes
 class Invoice {
-  readonly client: string; //this means we can read it both inside the class and outside but can never be modified
-  private details: string;
-  public amount: number;
+  // readonly client: string; //this means we can read it both inside the class and outside but can never be modified
+  // private details: string;
+  // public amount: number;
 
-  constructor(c: string, d: string, a: number) {
-    this.client = c;
-    this.details = d;
-    this.amount = a;
+  constructor(
+    readonly client: string, //this means we can read it both inside the class and outside but can never be modified
+    private details: string,
+    public amount: number
+  ) {
+    // this.client = c;
+    // this.details = d;
+    // this.amount = a;
   }
   // when we use format this.detais we can access details because it is inside the class
   format() {
