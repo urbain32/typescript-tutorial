@@ -1,10 +1,19 @@
 "use strict";
 // classes
 class Invoice {
-    constructor(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    // readonly client: string; //this means we can read it both inside the class and outside but can never be modified
+    // private details: string;
+    // public amount: number;
+    constructor(
+    // this can only be possible if we assign  readonly,private or public else we get an error
+    client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
+        // and inside here we dot need to use this
+        // this.client = c;
+        // this.details = d;
+        // this.amount = a;
     }
     // when we use format this.detais we can access details because it is inside the class
     format() {
