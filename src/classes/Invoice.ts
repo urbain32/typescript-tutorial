@@ -1,7 +1,6 @@
 // modules help us create separate component
 // that we can import to us them in differnt typescript component
-
-// exporting out Invoice classes to reuse it in app.ts
+// exporting out Invoice classes to re-use it in app.ts
 export class Invoice {
   constructor(
     readonly client: string,
