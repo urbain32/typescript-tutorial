@@ -18,6 +18,8 @@ const me: IsPerson = {
     //coz it is a number we must return
     return amount;
   },
+  //we cant also add another value which is not in IsPerson
+  skills: [],
 };
 
 import { Invoice } from "./classes/Invoice.js";
