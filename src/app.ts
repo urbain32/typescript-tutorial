@@ -1,3 +1,6 @@
+// creating an interface
+interface IsPerson {}
+
 import { Invoice } from "./classes/Invoice.js";
 
 const invOne = new Invoice("mario", " on the work done on the website", 250);
