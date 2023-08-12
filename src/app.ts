@@ -7,7 +7,18 @@ interface IsPerson {
 }
 
 // creating a variable to use our interface
-const me: IsPerson = {};
+const me: IsPerson = {
+  name: "Urban",
+  age: 26,
+  speak(text: string): void {
+    console.log(text);
+  },
+  spend(amount: number): number {
+    console.log("the amount is ", amount);
+    //coz it is a number we must return
+    return amount;
+  },
+};
 
 import { Invoice } from "./classes/Invoice.js";
 
