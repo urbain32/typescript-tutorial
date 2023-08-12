@@ -1,5 +1,8 @@
 // creating an interface
-interface IsPerson {}
+interface IsPerson {
+  name: string;
+  age: number;
+}
 
 import { Invoice } from "./classes/Invoice.js";
 
