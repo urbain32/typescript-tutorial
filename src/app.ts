@@ -6,6 +6,9 @@ interface IsPerson {
   spend(a: number): number;
 }
 
+// creating a variable to use our interface
+const me: IsPerson = {};
+
 import { Invoice } from "./classes/Invoice.js";
 
 const invOne = new Invoice("mario", " on the work done on the website", 250);
