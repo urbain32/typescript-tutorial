@@ -1,6 +1,26 @@
+// creating a variable to use our interface
+const me = {
+    name: "Urban",
+    age: 26,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("the amount is ", amount);
+        //coz it is a number we must return
+        return amount;
+    },
+};
+// let see our variable me
+console.log(me);
+// another thing is that it can be used everywhere
+const greetPerson = (person) => {
+    console.log("Name of the person is ", person.name);
+};
+greetPerson(me);
 import { Invoice } from "./classes/Invoice.js";
-const invOne = new Invoice("mario", "work on mario website", 250);
-const invTwo = new Invoice("luigi", "work on luigi website", 300);
+const invOne = new Invoice("mario", " on the work done on the website", 250);
+const invTwo = new Invoice("luigi", "on the work done on the website", 300);
 console.log(invOne, invTwo);
 // putting our invoice in an array
 let invoices = [];

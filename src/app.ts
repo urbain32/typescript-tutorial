@@ -18,9 +18,14 @@ const me: IsPerson = {
     //coz it is a number we must return
     return amount;
   },
-  //we cant also add another value which is not in IsPerson
-  skills: [],
 };
+// let see our variable me
+console.log(me);
+// another thing is that it can be used everywhere
+const greetPerson = (person: IsPerson) => {
+  console.log("Name of the person is ", person.name);
+};
+greetPerson(me);
 
 import { Invoice } from "./classes/Invoice.js";
 
