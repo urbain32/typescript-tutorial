@@ -1,6 +1,7 @@
 // modules help us create separate component
 // that we can import to us them in differnt typescript component
 // exporting out Invoice classes to re-use it in app.ts
+import { HasFormatter } from "../interfaces/HasFormatter.js";
 export class Invoice {
   constructor(
     readonly client: string,
