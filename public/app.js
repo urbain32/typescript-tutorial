@@ -1,24 +1,16 @@
-// creating a variable to use our interface
-const me = {
-    name: "Urban",
-    age: 26,
-    speak(text) {
-        console.log(text);
-    },
-    spend(amount) {
-        console.log("the amount is ", amount);
-        //coz it is a number we must return
-        return amount;
-    },
-};
-// let see our variable me
-console.log(me);
-// another thing is that it can be used everywhere
-const greetPerson = (person) => {
-    console.log("Name of the person is ", person.name);
-};
-greetPerson(me);
 import { Invoice } from "./classes/Invoice.js";
+import { Payment } from "./classes/Payment.js";
+let docOne;
+let docTwo;
+docOne = new Invoice("yoshi", "web work", 250);
+docTwo = new Payment("urban", "networking", 550);
+// creating an array using HasFormatter
+let docs = [];
+docs.push(docOne);
+docs.push(docTwo);
+docs.forEach((inv) => {
+    console.log(inv.format());
+});
 const invOne = new Invoice("mario", " on the work done on the website", 250);
 const invTwo = new Invoice("luigi", "on the work done on the website", 300);
 console.log(invOne, invTwo);
