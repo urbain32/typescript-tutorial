@@ -6,6 +6,14 @@ let docOne: HasFormatter;
 let docTwo: HasFormatter;
 docOne = new Invoice("yoshi", "web work", 250);
 docTwo = new Payment("urban", "networking", 550);
+// creating an array using HasFormatter
+let docs: HasFormatter[] = [];
+docs.push(docOne);
+docs.push(docTwo);
+docs.forEach((inv) => {
+  console.log(inv.format());
+});
+
 const invOne = new Invoice("mario", " on the work done on the website", 250);
 const invTwo = new Invoice("luigi", "on the work done on the website", 300);
 console.log(invOne, invTwo);
