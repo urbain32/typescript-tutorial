@@ -34,12 +34,12 @@ const type = document.querySelector("#type") as HTMLSelectElement;
 const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
-// using our interface in a form
-let doc: HasFormatter;
 
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
+  // using our interface in a form
+  let doc: HasFormatter;
   if (type.value === "invoice") {
     doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
   } else {

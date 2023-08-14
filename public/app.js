@@ -29,11 +29,11 @@ const type = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");
 const details = document.querySelector("#details");
 const amount = document.querySelector("#amount");
-// using our interface in a form
-let doc;
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    // using our interface in a form
+    let doc;
     if (type.value === "invoice") {
         doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
     }
