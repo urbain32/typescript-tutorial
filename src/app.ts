@@ -2,6 +2,10 @@ import { Invoice } from "./classes/Invoice.js";
 import { Payment } from "./classes/Payment.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
 
+let docOne: HasFormatter;
+let docTwo: HasFormatter;
+docOne = new Invoice("yoshi", "web work", 250);
+docTwo = new Payment("urban", "networking", 550);
 const invOne = new Invoice("mario", " on the work done on the website", 250);
 const invTwo = new Invoice("luigi", "on the work done on the website", 300);
 console.log(invOne, invTwo);
