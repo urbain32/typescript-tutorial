@@ -38,7 +38,7 @@ const amount = document.querySelector("#amount") as HTMLInputElement;
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
-  // using our interface in a form
+  // using our interface in a form to use hasFormatter
   let doc: HasFormatter;
   if (type.value === "invoice") {
     doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
