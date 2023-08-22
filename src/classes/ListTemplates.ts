@@ -9,5 +9,6 @@ export class ListTemplates {
     list.append(h4);
     const p = document.createElement("p");
     p.innerText = item.format();
+    list.append(p);
   }
 }
