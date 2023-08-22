@@ -8,5 +8,6 @@ export class ListTemplates {
     h4.innerText = heading;
     list.append(h4);
     const p = document.createElement("p");
+    p.innerText = item.format();
   }
 }
