@@ -1,4 +1,5 @@
 import { Invoice } from "./classes/Invoice.js";
+import { ListTemplates } from "./classes/ListTemplates.js";
 import { Payment } from "./classes/Payment.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
 
@@ -10,6 +11,7 @@ const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
 // displaying list template instance of ul
 const ul = document.querySelector("ul")!;
+const list = new ListTemplates(ul);
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
