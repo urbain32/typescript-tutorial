@@ -10,5 +10,11 @@ export class ListTemplates {
     const p = document.createElement("p");
     p.innerText = item.format();
     list.append(p);
+    // now using pos we want want to know where our user want the list in the container
+    if (pos === "start") {
+      this.container.prepend(list);
+    } else {
+      this.container.append(list);
+    }
   }
 }
