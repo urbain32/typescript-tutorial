@@ -6,5 +6,6 @@ export class ListTemplates {
     const list = document.createElement("li");
     const h4 = document.createElement("h4");
     h4.innerText = heading;
+    list.append(h4);
   }
 }
