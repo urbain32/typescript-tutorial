@@ -58,3 +58,10 @@ const docThree: Resource<string> = {
   resourceName: "urban",
   data: "string",
 };
+
+//  now let data be a string of array
+const docFour: Resource<string[]> = {
+  uid: 1,
+  resourceName: "urban",
+  data: ["string"],
+};
