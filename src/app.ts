@@ -51,3 +51,10 @@ const docTwo: Resource<object> = {
   resourceName: "string",
   data: { name: "yoshi", age: 20 },
 };
+
+//  now let data be an string
+const docThree: Resource<string> = {
+  uid: 1,
+  resourceName: "urban",
+  data: "string",
+};

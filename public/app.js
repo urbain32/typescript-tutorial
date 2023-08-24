@@ -40,3 +40,9 @@ const docTwo = {
     resourceName: "string",
     data: { name: "yoshi", age: 20 },
 };
+//  now let data be an string
+const docThree = {
+    uid: 1,
+    resourceName: "urban",
+    data: "string",
+};
