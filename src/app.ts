@@ -31,3 +31,5 @@ const addUID = (obj: object) => {
   let uid = Math.floor(Math.random() * 100);
   return { ...obj, uid };
 };
+let docOne = addUID({ name: "urban", age: 20 });
+console.log(docOne);
