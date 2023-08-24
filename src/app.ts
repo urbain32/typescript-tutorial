@@ -25,3 +25,9 @@ form.addEventListener("submit", (e: Event) => {
   // calling our list doc=item,heading=value,pos=end
   list.render(doc, type.value, "end");
 });
+
+// GENERICS
+const addUID = (obj: object) => {
+  let uid = Math.floor(Math.random() * 100);
+  return { ...obj, uid };
+};
