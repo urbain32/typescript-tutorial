@@ -38,8 +38,9 @@ let docOne = addUID({ name: "yoshi", age: 20 });
 console.log(docOne.name); // now the error goes away
 
 // using generics with interfaces
-interface Resource {
+// let say we want our data to be type  we want we have to use genercis
+interface Resource<T> {
   uid: number;
   resourceName: string;
-  data: "???";
+  data: T;
 }
