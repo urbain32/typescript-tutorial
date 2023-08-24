@@ -34,3 +34,9 @@ const addUID = (obj) => {
 // now name in our object cant be a number
 let docOne = addUID({ name: "yoshi", age: 20 });
 console.log(docOne.name); // now the error goes away
+//  now let data be an object
+const docTwo = {
+    uid: 1,
+    resourceName: "string",
+    data: { name: "yoshi", age: 20 },
+};

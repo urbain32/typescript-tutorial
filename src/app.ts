@@ -44,3 +44,10 @@ interface Resource<T> {
   resourceName: string;
   data: T;
 }
+
+//  now let data be an object
+const docTwo: Resource<object> = {
+  uid: 1,
+  resourceName: "string",
+  data: { name: "yoshi", age: 20 },
+};
