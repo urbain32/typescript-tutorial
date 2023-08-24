@@ -26,10 +26,11 @@ form.addEventListener("submit", (e) => {
 });
 // GENERICS when we use generics
 // we can also extends by saying what type we want
+// we can also say which type object we want
 const addUID = (obj) => {
     let uid = Math.floor(Math.random() * 100);
     return Object.assign(Object.assign({}, obj), { uid });
 };
-let docOne = addUID({ name: "urban", age: 20 });
-let docTwo = addUID("urban"); // because we said is an object we cant use string
+// now name in our object cant be a number
+let docOne = addUID({ name: 10, age: 20 });
 console.log(docOne.name); // now the error goes away
