@@ -65,3 +65,4 @@ const docFour: Resource<string[]> = {
   resourceName: "urban",
   data: ["string"],
 };
+console.log(docTwo, docThree, docFour);

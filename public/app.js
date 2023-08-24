@@ -46,3 +46,10 @@ const docThree = {
     resourceName: "urban",
     data: "string",
 };
+//  now let data be a string of array
+const docFour = {
+    uid: 1,
+    resourceName: "urban",
+    data: ["string"],
+};
+console.log(docTwo, docThree, docFour);
