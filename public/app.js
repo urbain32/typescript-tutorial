@@ -24,10 +24,10 @@ form.addEventListener("submit", (e) => {
     // calling our list doc=item,heading=value,pos=end
     list.render(doc, type.value, "end");
 });
-// GENERICS
+// GENERICS help us to be able to display anything in an object coz if we dont we get an error
 const addUID = (obj) => {
     let uid = Math.floor(Math.random() * 100);
     return Object.assign(Object.assign({}, obj), { uid });
 };
 let docOne = addUID({ name: "urban", age: 20 });
-console.log(docOne);
+console.log(docOne.name); // without generic docOne.name does not exist
