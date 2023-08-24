@@ -32,5 +32,5 @@ const addUID = (obj) => {
     return Object.assign(Object.assign({}, obj), { uid });
 };
 // now name in our object cant be a number
-let docOne = addUID({ name: 10, age: 20 });
+let docOne = addUID({ name: "yoshi", age: 20 });
 console.log(docOne.name); // now the error goes away

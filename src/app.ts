@@ -34,5 +34,12 @@ const addUID = <T extends { name: string }>(obj: T) => {
   return { ...obj, uid };
 };
 // now name in our object cant be a number
-let docOne = addUID({ name: 10, age: 20 });
+let docOne = addUID({ name: "yoshi", age: 20 });
 console.log(docOne.name); // now the error goes away
+
+// using generics with interfaces
+interface Resource {
+  uid: number;
+  resourceName: string;
+  data: "???";
+}
