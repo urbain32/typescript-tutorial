@@ -49,28 +49,28 @@ enum ResourceType {
 }
 interface Resource<T> {
   uid: number;
-  resourceName: string;
+  resourceName: ResourceType;
   data: T;
 }
 
 //  now let data be an object
 const docTwo: Resource<object> = {
   uid: 1,
-  resourceName: "string",
+  resourceName: ResourceType.BOOK,
   data: { name: "yoshi", age: 20 },
 };
 
 //  now let data be an string
 const docThree: Resource<string> = {
   uid: 1,
-  resourceName: "urban",
+  resourceName: ResourceType.DIRECTOR,
   data: "string",
 };
 
 //  now let data be a string of array
 const docFour: Resource<string[]> = {
   uid: 1,
-  resourceName: "urban",
+  resourceName: ResourceType.PERSON,
   data: ["string"],
 };
 console.log(docTwo, docThree, docFour);
