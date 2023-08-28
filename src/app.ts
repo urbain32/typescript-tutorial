@@ -39,7 +39,7 @@ console.log(docOne.name); // now the error goes away
 
 // using generics with interfaces
 // let say we want our data to be type  we want we have to use genercis
-// using Enum helps us not to keep remembering is like using a select
+// using Enum change string to number
 enum ResourceType {
   BOOK,
   AUTHOR,
