@@ -34,22 +34,33 @@ const addUID = (obj) => {
 // now name in our object cant be a number
 let docOne = addUID({ name: "yoshi", age: 20 });
 console.log(docOne.name); // now the error goes away
+// using generics with interfaces
+// let say we want our data to be type  we want we have to use genercis
+// using Enum change string to number
+var ResourceType;
+(function (ResourceType) {
+    ResourceType[ResourceType["BOOK"] = 0] = "BOOK";
+    ResourceType[ResourceType["AUTHOR"] = 1] = "AUTHOR";
+    ResourceType[ResourceType["FILM"] = 2] = "FILM";
+    ResourceType[ResourceType["DIRECTOR"] = 3] = "DIRECTOR";
+    ResourceType[ResourceType["PERSON"] = 4] = "PERSON";
+})(ResourceType || (ResourceType = {}));
 //  now let data be an object
 const docTwo = {
     uid: 1,
-    resourceName: "string",
+    resourceName: ResourceType.BOOK,
     data: { name: "yoshi", age: 20 },
 };
 //  now let data be an string
 const docThree = {
     uid: 1,
-    resourceName: "urban",
+    resourceName: ResourceType.DIRECTOR,
     data: "string",
 };
 //  now let data be a string of array
 const docFour = {
     uid: 1,
-    resourceName: "urban",
+    resourceName: ResourceType.PERSON,
     data: ["string"],
 };
 console.log(docTwo, docThree, docFour);
