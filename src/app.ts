@@ -74,3 +74,10 @@ const docFour: Resource<string[]> = {
   data: ["string"],
 };
 console.log(docTwo, docThree, docFour);
+
+// tuples
+
+// before when we define an array the types we give to that are will not matter if we want to change them
+// example
+let arr = ["yoshi", 25, false];
+arr[0] = false; // this will change yoshi to a string
