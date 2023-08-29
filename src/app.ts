@@ -80,4 +80,7 @@ console.log(docTwo, docThree, docFour);
 // before when we define an array the types we give to that are will not matter if we want to change them
 // example
 let arr = ["yoshi", 25, false];
-arr[0] = false; // this will change yoshi to a string
+arr[0] = false; // this will change yoshi to a false
+
+// using tuples
+let tup: [string, number, number] = ["yoshi", 25, false]; //this will not work coz tup false is not a number
