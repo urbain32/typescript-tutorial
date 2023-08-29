@@ -84,3 +84,4 @@ arr[0] = false; // this will change yoshi to a false
 
 // using tuples
 let tup: [string, number, boolean] = ["yoshi", 25, false];
+// same here we will get an error if we trying to change the index 0 to another type which is not a string
