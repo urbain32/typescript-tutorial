@@ -15,12 +15,17 @@ const list = new ListTemplates(ul);
 // adding an event listiner to display our form values
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
+  // using tuples in this form will help not to just enter any type
+
+  let values = [tofrom.value, details.value, amount.valueAsNumber];
+
   // using our interface in a form to use hasFormatter
   let doc: HasFormatter;
   if (type.value === "invoice") {
-    doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+    // always remeber spread operator must use tuple to know which type we be passed in every single field
+    doc = new Invoice(...values);
   } else {
-    doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+    doc = new Payment(...values);
   }
   // calling our list doc=item,heading=value,pos=end
   list.render(doc, type.value, "end");
@@ -85,3 +90,4 @@ arr[0] = false; // this will change yoshi to a false
 // using tuples
 let tup: [string, number, boolean] = ["yoshi", 25, false];
 // same here we will get an error if we trying to change the index 0 to another type which is not a string
+tup[0] = "urban";
