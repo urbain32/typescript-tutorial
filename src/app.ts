@@ -83,4 +83,4 @@ let arr = ["yoshi", 25, false];
 arr[0] = false; // this will change yoshi to a false
 
 // using tuples
-let tup: [string, number, number] = ["yoshi", 25, false]; //this will not work coz tup false is not a number
+let tup: [string, number, boolean] = ["yoshi", 25, false];
