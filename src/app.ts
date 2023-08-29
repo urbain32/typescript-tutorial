@@ -17,7 +17,8 @@ form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
   // using tuples in this form will help not to just enter any type
 
-  let values = [tofrom.value, details.value, amount.valueAsNumber];
+  let values: [string, string, number];
+  values = [tofrom.value, details.value, amount.valueAsNumber];
 
   // using our interface in a form to use hasFormatter
   let doc: HasFormatter;
